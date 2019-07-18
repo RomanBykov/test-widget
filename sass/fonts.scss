@@ -1,0 +1,47 @@
+@font-face {
+  font-weight: 400;
+  font-family: "RotondaC";
+  font-style: normal;
+  font-display: swap;
+  src: local("RotondaC");
+  src: url("../fonts/RotondaC.woff");
+  src: url('../fonts/RotondaC.eot');
+  src: url('../fonts/RotondaC.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/RotondaC.ttf') format('truetype');
+}
+
+@font-face {
+  font-weight: 700;
+  font-family: "RotondaC-Bold";
+  font-style: normal;
+  font-display: swap;
+  src: local("RotondaC-Bold");
+  src: url("../fonts/RotondaC-Bold.woff");
+  src: url('../fonts/RotondaC-Bold.eot');
+  src: url('../fonts/RotondaC-Bold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/RotondaC-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-weight: 700;
+  font-family: "ALSSchlangesans-Bold";
+  font-style: normal;
+  font-display: swap;
+  src: local("ALSSchlangesans-Bold");
+  src: url("../fonts/ALSSchlangesans-Bold.woff");
+  src: url('../fonts/ALSSchlangesans-Bold.eot');
+  src: url('../fonts/ALSSchlangesans-Bold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/ALSSchlangesans-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-weight: 400;
+  font-family: "MyriadPro-Regular";
+  font-style: normal;
+  font-display: swap;
+  src: local("MyriadPro-Regular");
+  src: url("../fonts/MyriadPro-Regular.woff");
+  src: url('../fonts/MyriadPro-Regular.eot');
+  src: url('../fonts/MyriadPro-Regular.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/MyriadPro-Regular.ttf') format('truetype');
+}

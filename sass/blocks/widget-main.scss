@@ -1,0 +1,50 @@
+.widget-main {
+  padding: 0 17px;
+
+  font-family: $myriad;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+}
+
+.widget-main__name-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 8px;
+
+  font-family: $als-bold;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 18px;
+  letter-spacing: 0.64px;
+  color: $blue;
+}
+
+.widget-main__discount {
+  display: inline-block;
+  width: 71px;
+  height: 43px;
+  margin-right: -17px;
+  padding-left: 23px;
+
+  font-size: 25.31px;
+  line-height: 43px;
+  vertical-align: middle;
+  color: $yellow;
+
+  background-color: $blue;
+  border-radius: 8px 0 0 8px;
+}
+
+.widget-main__text {
+  margin-bottom: 21px;
+}
+
+.widget-main__social {
+  margin-bottom: 19px;
+}
+
+.widget-main__form {
+  margin-bottom: 17px;
+}

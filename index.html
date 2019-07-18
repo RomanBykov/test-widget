@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Widget</title>
+    <meta name="description" content="Widget">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="css/style.min.css">
+  </head>
+  <body>
+    <article class="widget">
+      <header class="widget__header widget-header">
+        <h1 class="widget-header__title">Ваш заказ №<a class="widget-header__link" href="#">1890998</a> принят и находится в обработке</h1>
+        <button class="widget-header__btn" type="button">
+          <span class="visually-hidden">Закрыть виджет</span>
+        </button>
+      </header>
+      <main class="widget__main widget-main">
+        <div class="widget-main__name-wrap">
+          <h2 class="widget-main__user-name user-name">Михаил Иванович!</h2>
+          <div class="widget-main__discount"><span class="visually-hidden">Скидка</span>10%</div>
+        </div>
+        <p class="widget-main__text">подарите друзьям скидку <br>в «CompanyName» и получите скидку <br>в подарок,за каждого друга</p>
+        <ul class="widget-main__social social">
+          <li class="social__link-wrap">
+            <a class="social__link social__link--ok" href="#">
+              <span class="visually-hidden">Одноклассники</span>
+              <svg width="14.69" height="25.312">
+                  <use xlink:href="#icon-ok"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__link-wrap">
+            <a class="social__link social__link--fb" href="#">
+              <span class="visually-hidden">Facebook</span>
+              <svg width="13.188" height="25.312">
+                <use xlink:href="#icon-fb"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__link-wrap">
+            <a class="social__link social__link--twit" href="#">
+              <span class="visually-hidden">Twitter</span>
+              <svg width="22.031" height="17.875">
+                <use xlink:href="#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__link-wrap">
+            <a class="social__link social__link--vk" href="#">
+              <span class="visually-hidden">Вконтакте</span>
+              <svg width="17" height="22">
+                <use xlink:href="#icon-vk"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+        <form class="widget-main__form widget-form" action="http://echo.htmlacademy.ru" method="POST">
+          <label class="visually-hidden" for="email">Вставьте здесь e-mail друга</label>
+          <input class="widget-form__input widget-input widget-input--oneline" type="email" name="email" id="email" placeholder="E-mail друзей">
+          <textarea class="widget-form__comment widget-input widget-input--multiline" name="comment" cols="1" rows="7">Хороший ассортимент и цены в %site_name%. Только что после покупки подарили скидку %friend_reward% для моих друзей!
+
+Времени мало, Вперёд!</textarea>
+          <button class="widget-form__btn button" type="submit">Отправить</button>
+        </form>
+      </main>
+      <footer class="widget__footer widget-footer">
+        <div class="widget-footer__link-wrap">
+          <a class="widget-footer__link" href="http://floctoryblablabla/#########" id="rules">http://floctoryblablabla/#########</a>
+        </div>
+        <div class="widget-footer__rules-wrap">
+          <a class="widget-footer__rules" href="#rules">Правила акции</a>
+        </div>
+        <a class="widget-footer__agreement" href="#">Пользовательское соглашение</a>
+      </footer>
+    </article>
+    <div style="display: none;">
+      <include src="build/img/svg/sprite.svg"></include>
+    </div>
+  </body>
+</html>

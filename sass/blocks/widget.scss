@@ -1,0 +1,17 @@
+.widget {
+  width: 300px;
+  margin: 0 auto;
+
+  letter-spacing: 0.64px;
+
+  background-color: $white;
+  border-radius: 15px;
+  border: 1px solid $grey;
+  box-sizing: border-box;
+
+  overflow: hidden;
+}
+
+.widget__main {
+  background-color: $white;
+}

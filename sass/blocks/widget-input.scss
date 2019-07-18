@@ -1,0 +1,35 @@
+.widget-input {
+  display: inline-block;
+  width: 100%;
+  padding: 0 12px;
+
+  font-family: $rotonda;
+  font-size: 14px;
+  line-height: 18px;
+  color: $input-grey;
+  vertical-align: middle;
+  letter-spacing: 0.64px;
+
+  border: 1px solid $blue;
+  border-radius: 5px;
+  box-sizing: border-box;
+
+  &::placeholder {
+    color: $grey_05;
+  }
+}
+
+.widget-input--oneline {
+  height: 31px;
+
+  line-height: 31px;
+}
+
+.widget-input--multiline {
+  height: 150px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+
+  resize: none;
+  overflow: hidden;
+}

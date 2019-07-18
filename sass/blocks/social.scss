@@ -1,0 +1,30 @@
+.social {
+  display: flex;
+  justify-content: space-between;
+}
+
+.social__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 51px;
+  height: 51px;
+
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 50%;
+}
+
+.social__link--ok {
+  border-color: $orange;
+}
+
+.social__link--fb {
+  border-color: $fb-blue;
+}
+.social__link--twit {
+  border-color: $twitter-blue;
+}
+.social__link--vk {
+  border-color: $vk-blue;
+}
