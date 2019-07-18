@@ -1,5 +1,5 @@
 # test-widget
-see it on (github pages)[https://romanbykov.github.io/test-widget/]
+see it on [github pages](https://romanbykov.github.io/test-widget/)
 
 ## Build Setup:
 
