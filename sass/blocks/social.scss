@@ -27,4 +27,8 @@
 }
 .social__link--vk {
   border-color: $vk-blue;
+
+  & svg {
+    font-family: $roboto-bold;
+  }
 }

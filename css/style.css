@@ -4,9 +4,7 @@
   font-style: normal;
   font-display: swap;
   src: local("RotondaC");
-  src: url("../fonts/RotondaC.woff");
-  src: url("../fonts/RotondaC.eot");
-  src: url("../fonts/RotondaC.eot?#iefix") format("embedded-opentype"), url("../fonts/RotondaC.ttf") format("truetype"); }
+  src: url("../fonts/RotondaC.woff"); }
 
 @font-face {
   font-weight: 700;
@@ -14,9 +12,7 @@
   font-style: normal;
   font-display: swap;
   src: local("RotondaC-Bold");
-  src: url("../fonts/RotondaC-Bold.woff");
-  src: url("../fonts/RotondaC-Bold.eot");
-  src: url("../fonts/RotondaC-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/RotondaC-Bold.ttf") format("truetype"); }
+  src: url("../fonts/RotondaC-Bold.woff"); }
 
 @font-face {
   font-weight: 700;
@@ -24,9 +20,7 @@
   font-style: normal;
   font-display: swap;
   src: local("ALSSchlangesans-Bold");
-  src: url("../fonts/ALSSchlangesans-Bold.woff");
-  src: url("../fonts/ALSSchlangesans-Bold.eot");
-  src: url("../fonts/ALSSchlangesans-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/ALSSchlangesans-Bold.ttf") format("truetype"); }
+  src: url("../fonts/ALSSchlangesans-Bold.woff"); }
 
 @font-face {
   font-weight: 400;
@@ -34,9 +28,15 @@
   font-style: normal;
   font-display: swap;
   src: local("MyriadPro-Regular");
-  src: url("../fonts/MyriadPro-Regular.woff");
-  src: url("../fonts/MyriadPro-Regular.eot");
-  src: url("../fonts/MyriadPro-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/MyriadPro-Regular.ttf") format("truetype"); }
+  src: url("../fonts/MyriadPro-Regular.woff"); }
+
+@font-face {
+  font-weight: 700;
+  font-family: "Roboto-Bold";
+  font-style: normal;
+  font-display: swap;
+  src: local("Roboto-Bold");
+  src: url("../fonts/Roboto-Bold.woff"); }
 
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
@@ -120,6 +120,8 @@ table {
 
 .social__link--vk {
   border-color: #416da1; }
+  .social__link--vk svg {
+    font-family: "Roboto-Bold", Arial, sans-serif; }
 
 .visually-hidden:not(:focus):not(:active) {
   position: absolute;
@@ -317,6 +319,7 @@ table {
       -ms-flex-align: baseline;
           align-items: baseline;
   margin-bottom: 8px;
+  max-width: 264px;
   font-family: "ALSSchlangesans-Bold", Arial, sans-serif;
   font-weight: 700;
   font-size: 18px;
@@ -330,6 +333,8 @@ table {
   height: 43px;
   margin-right: -17px;
   padding-left: 23px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
   font-size: 25.31px;
   line-height: 43px;
   vertical-align: middle;
@@ -338,7 +343,8 @@ table {
   border-radius: 8px 0 0 8px; }
 
 .widget-main__text {
-  margin-bottom: 21px; }
+  margin-bottom: 21px;
+  font-family: "MyriadPro-Regular", Arial, sans-serif; }
 
 .widget-main__social {
   margin-bottom: 19px; }
