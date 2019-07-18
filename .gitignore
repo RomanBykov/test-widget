@@ -5,11 +5,11 @@
 *.pdf
 *.psd
 *.sublime*
-css/*.css
+# css/*.css
 scss/
 node_modules/
 npm-debug.*
 Thumbs.db
 pink/
 .vscode/
-build/
+# build/

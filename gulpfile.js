@@ -17,13 +17,13 @@ var imagemin = require("gulp-imagemin");
 var del = require("del");
 var htmlmin = require("gulp-htmlmin");
 
-gulp.task("svg-min", function() {
-  return gulp.src("img/svg/*.svg")
-  .pipe(imagemin(
-      imagemin.svgo()
-  ))
-  .pipe(gulp.dest("img/svg"));
-});
+// gulp.task("svg-min", function() {
+//   return gulp.src("img/svg/*.svg")
+//   .pipe(imagemin(
+//       imagemin.svgo()
+//   ))
+//   .pipe(gulp.dest("img/svg"));
+// });
 
 // Регулярно используемые таски идущие в билд и в живой сервер
 gulp.task("sprite", function() {
@@ -32,7 +32,7 @@ gulp.task("sprite", function() {
       inlineSvg: true
   }))
   .pipe(rename("sprite.svg"))
-  .pipe(gulp.dest("build/img/svg"));
+  .pipe(gulp.dest("img/svg"));
 });
 
 gulp.task("html", function() {
@@ -40,14 +40,14 @@ gulp.task("html", function() {
   .pipe(posthtml([
       include()
   ]))
-  .pipe(gulp.dest("build"))
+  .pipe(gulp.dest("."))
   .pipe(server.stream());
 });
 
 gulp.task("minify-html", function() {
-  return gulp.src("build/*.html")
+  return gulp.src("*.html")
       .pipe(htmlmin({ collapseWhitespace: true }))
-      .pipe(gulp.dest("build"));
+      .pipe(gulp.dest("."));
 });
 
 gulp.task("style", function() {
@@ -58,31 +58,31 @@ gulp.task("style", function() {
       .pipe(postcss([
           autoprefixer()
       ]))
-      .pipe(gulp.dest("build/css"))
+      .pipe(gulp.dest("./css"))
       .pipe(minify())
       .pipe(rename("style.min.css"))
-      .pipe(gulp.dest("build/css"))
+      .pipe(gulp.dest("./css"))
       .pipe(server.stream());
 });
 
-gulp.task("copy", function() {
-  return gulp.src([
-      "fonts/**/*",
-      "img/**"
-  ], {
-      base: "."
-  })
-  .pipe(gulp.dest("build"));
-});
+// gulp.task("copy", function() {
+//   return gulp.src([
+//       "fonts/**/*",
+//       "img/**"
+//   ], {
+//       base: "."
+//   })
+//   .pipe(gulp.dest("."));
+// });
 
-gulp.task("clean", function() {
-  return del("build");
-});
+// gulp.task("clean", function() {
+//   return del("build");
+// });
 
 gulp.task("build", function (done) {
   run(
-    "clean",
-    "copy",
+    // "clean",
+    // "copy",
     "style",
     "sprite",
     "html",
@@ -93,7 +93,7 @@ gulp.task("build", function (done) {
 
 gulp.task("serve", function () {
   server.init({
-      server: "build/",
+      server: ".",
       notify: false,
       open: true,
       cors: true,
